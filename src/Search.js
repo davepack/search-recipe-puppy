@@ -9,6 +9,8 @@ import {
 
 const BASEURL = 'http://www.recipepuppy.com/api/';
 
+// use the debounce function to limit api calls and ensure the last
+// string entered is used for the query
 let debounce = (func, wait, immediate) => {
   var timeout;
   return function() {
